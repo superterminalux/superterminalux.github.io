@@ -13,7 +13,7 @@
       <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://superterminalux.github.io/posts/a1-test-post/</guid>
-      <description>#include &amp;lt;stdio.h&amp;gt; int main() { printf(Hello World!\n); return 0; </description>
+      <description>#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello World!\n&amp;#34;); return 0; } </description>
     </item>
     
     <item>
