@@ -6,32 +6,15 @@
     <description>Recent content on My Learn-Improve Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A1 Test Post</title>
-      <link>https://superterminalux.github.io/posts/a1-test-post/</link>
-      <pubDate>Wed, 19 Jul 2023 00:00:00 +0000</pubDate>
+      <title>About Fundamentals</title>
+      <link>https://superterminalux.github.io/posts/fundamentals-and-programs/</link>
+      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
       
-      <guid>https://superterminalux.github.io/posts/a1-test-post/</guid>
-      <description>#include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello World!\n&amp;#34;); return 0; } </description>
-    </item>
-    
-    <item>
-      <title>First Post Test</title>
-      <link>https://superterminalux.github.io/posts/first-post-test/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://superterminalux.github.io/posts/first-post-test/</guid>
-      <description>My first post test.</description>
-    </item>
-    
-    <item>
-      <title>Second Post Test</title>
-      <link>https://superterminalux.github.io/posts/second-post-test/</link>
-      <pubDate>Tue, 18 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://superterminalux.github.io/posts/second-post-test/</guid>
-      <description>My second post test&amp;hellip;</description>
+      <guid>https://superterminalux.github.io/posts/fundamentals-and-programs/</guid>
+      <description>Programs What Is The Program? The meaning of the program is the executable text specific to hardware of the devices. 1 and 0 codes are run as much as the processor of the device acceptes.
+If we examine the working of the program with an example : When a program with .exe extension or a program is run in a diffrent operating systems, certain commands are sent to the processor simultaneously with the execution of the binary codes of this program.</description>
     </item>
     
   </channel>
