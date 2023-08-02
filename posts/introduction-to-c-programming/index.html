@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/font-awesome/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/lib/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://latest.cactus.chat/cactus.js"></script>
+  <link rel="stylesheet" href="https://latest.cactus.chat/style.css" type="text/css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title> Introduction to C Programming | My Learn-Improve Blog</title>
+  <link rel = 'canonical' href = 'https://superterminalux.github.io/posts/introduction-to-c-programming/'>
+  <meta name="description" content="Hello, welcome to my Learn-Improve blog page. I&#39;m determined to improve my self and learn new informatins about computers, softwares and cyber security. As I learn new informations and improve myself in these areas, I will share the information and ideas I have gained in here.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <meta name="googlebot" content="index,follow,snippet,archive">
+  <meta property="og:title" content="Introduction to C Programming" />
+<meta property="og:description" content="Let&rsquo;s start with an example that almost everyone who wants to know about this subject knows.
+Basic Simple : Hello World! #include &lt;stdio.h&gt; int main() { printf(&#34;Hello Wordl!&#34;); return 0; } # An Important Note: On windows operating system, here also when using different compliers,#include &lt;conio.h&gt; and after the printf fonctions getch() should add. This is a funtion that needs to be added to prevent the running code from appearing for a snapshot and going back." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://superterminalux.github.io/posts/introduction-to-c-programming/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-08-02T00:00:00+00:00" />
+<meta property="article:modified_time" content="2023-08-02T00:00:00+00:00" />
+
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Introduction to C Programming"/>
+<meta name="twitter:description" content="Let&rsquo;s start with an example that almost everyone who wants to know about this subject knows.
+Basic Simple : Hello World! #include &lt;stdio.h&gt; int main() { printf(&#34;Hello Wordl!&#34;); return 0; } # An Important Note: On windows operating system, here also when using different compliers,#include &lt;conio.h&gt; and after the printf fonctions getch() should add. This is a funtion that needs to be added to prevent the running code from appearing for a snapshot and going back."/>
+
+  
+  
+    
+  
+  
+  <link rel="stylesheet" href="https://superterminalux.github.io/css/styles.c05d68261bf086a9d7713c4f8a6215a3601608e267a816a7ee58f139b3d1aae51222aae2081c8e0c6bd35e1334773b7a16283022f31f92afd93bb37e5e822e66.css" integrity="sha512-wF1oJhvwhqnXcTxPimIVo2AWCOJnqBan7ljxObPRquUSIqriCByODGvTXhM0dzt6FigwIvMfkq/ZO7N&#43;XoIuZg=="> 
+
+  
+   <link rel="stylesheet" href="https://superterminalux.github.io/css/custom.css"> 
+  
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  
+
+  
+<link rel="icon" type="image/png" href="https://superterminalux.github.io/images/favicon.ico" />
+
+  
+  
+</head>
+
+<body class="max-width mx-auto px3 ltr">
+  <div class="content index py4">
+
+  <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;" aria-label="Top of Page"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">All posts</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li>
+          <a class="icon" href=" https://superterminalux.github.io/posts/fundamentals-and-programs/" aria-label="Previous">
+            <i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i>
+          </a>
+        </li>
+        
+        
+        <li>
+          <a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+            <i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i>
+          </a>
+        </li>
+        <li>
+          <a class="icon" href="#" aria-label="Share">
+            <i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i>
+          </a>
+        </li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f" aria-label="Facebook">
+      <i class="fab fa-facebook " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&text=Introduction%20to%20C%20Programming" aria-label="Twitter">
+      <i class="fab fa-twitter " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&title=Introduction%20to%20C%20Programming" aria-label="Linkedin">
+      <i class="fab fa-linkedin " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&is_video=false&description=Introduction%20to%20C%20Programming" aria-label="Pinterest">
+      <i class="fab fa-pinterest " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Introduction%20to%20C%20Programming&body=Check out this article: https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f" aria-label="Email">
+      <i class="fas fa-envelope " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&title=Introduction%20to%20C%20Programming" aria-label="Pocket">
+      <i class="fab fa-get-pocket " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&title=Introduction%20to%20C%20Programming" aria-label="reddit">
+      <i class="fab fa-reddit " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&name=Introduction%20to%20C%20Programming&description=Let%26rsquo%3bs%20start%20with%20an%20example%20that%20almost%20everyone%20who%20wants%20to%20know%20about%20this%20subject%20knows.%0aBasic%20Simple%20%3a%20Hello%20World%21%20%23include%20%26lt%3bstdio.h%26gt%3b%20int%20main%28%29%20%7b%20printf%28%26%2334%3bHello%20Wordl%21%26%2334%3b%29%3b%20return%200%3b%20%7d%20%23%20An%20Important%20Note%3a%20On%20windows%20operating%20system%2c%20here%20also%20when%20using%20different%20compliers%2c%23include%20%26lt%3bconio.h%26gt%3b%20and%20after%20the%20printf%20fonctions%20getch%28%29%20should%20add.%20This%20is%20a%20funtion%20that%20needs%20to%20be%20added%20to%20prevent%20the%20running%20code%20from%20appearing%20for%20a%20snapshot%20and%20going%20back." aria-label="Tumblr">
+      <i class="fab fa-tumblr " aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&t=Introduction%20to%20C%20Programming" aria-label="Hacker News">
+      <i class="fab fa-hacker-news " aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+    
+  </span>
+</div>
+
+
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <header>
+      <h1 class="posttitle" itemprop="name headline">
+        Introduction to C Programming
+      </h1>
+      <div class="meta">
+        
+        <div class="postdate">
+          
+          <time datetime="2023-08-02 00:00:00 &#43;0000 UTC" itemprop="datePublished">2023-08-02</time>
+          
+        </div>
+        
+        
+        
+        
+      </div>
+    </header>
+
+  
+    
+    <div id="toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#basic-simple--hello-world">Basic Simple : Hello World!</a></li>
+    <li><a href="#variables">Variables</a>
+      <ul>
+        <li><a href="#some-of-the-variables-are">Some Of The Variables Are:</a></li>
+      </ul>
+    </li>
+    <li><a href="#using-variables-in-command-lines">Using Variables In Command Lines</a>
+      <ul>
+        <li><a href="#simple-example-of-using-variables">Simple Example Of Using Variables</a></li>
+      </ul>
+    </li>
+    <li><a href="#list-of-some-variables-used">List Of Some Variables Used</a></li>
+    <li><a href="#examining-variables-with-different-examples">Examining Variables With Different Examples</a></li>
+    <li><a href="#some-information-about-the-c-programming-language">Some Information About The C Programming Language</a>
+      <ul>
+        <li><a href="#commands-usde-in-c-programming-to-print-some-special-characters-in-the-program">Commands Usde In C Programming To Print Some Special Characters In The Program</a></li>
+      </ul>
+    </li>
+    <li><a href="#what-did-we-talk-about-on-this-page-and-what-did-we-learn">What Did We Talk About On This Page And What Did We Learn?</a></li>
+  </ul>
+</nav>
+    </div>
+    
+    <div class="content" itemprop="articleBody">
+      <p>Let&rsquo;s start with an example that almost everyone who wants to know about this subject knows.</p>
+<h2 id="basic-simple--hello-world">Basic Simple : Hello World!</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>()
+</span></span><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Hello Wordl!&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p><strong># An Important Note:</strong> On windows operating system, here also when using different compliers,<code>#include &lt;conio.h&gt;</code> and after the <strong>printf</strong> fonctions <code>getch()</code> should add. This is a funtion that needs to be added to prevent the running code from appearing for a snapshot and going back. If not added, the code runs and closes itself in milliseconds.</p>
+<p>Here, a library is primarily included with <code>#include</code>. Therefore, the functions in the library will be available. In the simplest example, the <em>printf</em> command does not exist in C here.
+By adding the <em>stdio.h</em> library, this function in the library becomes usable by C. After this library is included, standart input and standart output can be useable. Also this library(<strong>&lt;stdio.h&gt;</strong>) should be added to every codes.</p>
+<p>The <code>main()</code> function is specifically called by the operating system. Let&rsquo;s prented we&rsquo;re basically just going to use it, while there are different functions that can be called. Except for some expression functions that will be taken from the new library written inside this function, all lines must have a semicolon &ldquo;<strong>;</strong>&rdquo; at the end. It will be mentioned in the following stages which one and which one is not.</p>
+<p>The <code>return</code> command will prevent the code from trying to repeat itself by going back to the beginnig.</p>
+<h2 id="variables">Variables</h2>
+<p>The following 4 information about the variables should definitely be known.</p>
+<ol>
+<li><strong>Name of the variable:</strong> The variable must be given a name so that it has a memory location so that it can be used when called.</li>
+<li><strong>Type of the variable:</strong> Variable types that can hold data should be known.</li>
+<li><strong>Space the variable will occupy in memory:</strong> How much space it will occupy should be determined.</li>
+<li><strong>The value of the veriable:</strong> It is necessary to know where the variable can be used and where it can not be used.</li>
+</ol>
+<h3 id="some-of-the-variables-are">Some Of The Variables Are:</h3>
+<p><img src="/datype2.png" alt="About the value types"></p>
+<h2 id="using-variables-in-command-lines">Using Variables In Command Lines</h2>
+<h3 id="simple-example-of-using-variables">Simple Example Of Using Variables</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> x;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;a:%d, b:%d, c:%d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, a, b, c);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In the sample code, part of which is given;
+Firstly, one variable is defined. Type is <code>int(eger)</code> and <strong>10</strong> in it. In the same way, variables <strong>b</strong>, <strong>c</strong> are also defined. The variable <strong>x</strong> is a space until something is put into it.</p>
+<p>Here, <strong>%d</strong> written in quotes with the <code>printf</code> function; take the variable that is put after this quote and that means pu it where you see <strong>%d</strong>. Sorting is important at this stage. ıf the order is not taken into consideration, different definitions may come to the desired place.</p>
+<p>Here is the code <code>printf(&quot;a:10, b:3, c:4&quot;)</code>; It could have been written as, but here the code becomes completely fixed, in the future, it was necessary to change all the values one by one if it was desired to make changes. When this code is written as it was originally written, if a change is desired, it will be sufficient to change only the values defined for the variables.</p>
+<p>When we run the code written so far, we will get <code>a:10, b:3, c:4</code> output.</p>
+<p>We can add the following lines to take this code one step further.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Enter a number: &#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>x);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Entered number: %d&#34;</span>, x);
+</span></span></code></pre></div><p>In short, as a result;</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> <span style="color:#ae81ff">10</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> b <span style="color:#f92672">=</span> <span style="color:#ae81ff">3</span>, c <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">int</span> x;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;a:%d, b:%d, c:%d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, a, b, c);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Enter a number: &#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">scanf</span>(<span style="color:#e6db74">&#34;%d&#34;</span>, <span style="color:#f92672">&amp;</span>x);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;Entered number: %d</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>, x);
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span>(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">&#34;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Using <code>scanf</code> ve <code>&amp;</code>x, input is expected from the user. In other words, the reverse of <strong>printf</strong> is <strong>scanf</strong>. One works for output while the other works for input.               <br>
+Next the number entered will be printed on the screnn with <code>printf</code>.</p>
+<p>If the code is written like this, you will get the following result:</p>
+<blockquote>
+<p><img src="/ss.png" alt="sshot"></p>
+</blockquote>
+<h2 id="list-of-some-variables-used">List Of Some Variables Used</h2>
+<p>We can show frequently used variable types with a table.</p>
+<p><img src="/DATA-TYPES-IN-C.jpg" alt="Data Types Picture"></p>
+<h2 id="examining-variables-with-different-examples">Examining Variables With Different Examples</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stdio.h&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>(){
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">float</span> pi <span style="color:#f92672">=</span> <span style="color:#ae81ff">3.14</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">printf</span> (<span style="color:#e6db74">&#34;%8.4f&#34;</span>, pi);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>In this sample code;
+One <strong>pi</strong> variable is defined. It&rsquo;s type is <code>float</code> and it has <strong>3.14</strong> in it.
+Afterwards, it was requested to be printed on the screen as output.
+Here, the expression <strong>%8.4f</strong> means that the variable will occupy a total of 8 characters and the decimal part will consist of 4 digits.</p>
+<p>After this code is run correctly, <code>  3.1400</code> will be output.</p>
+<h2 id="some-information-about-the-c-programming-language">Some Information About The C Programming Language</h2>
+<p>Since C is a &ldquo;case enstein&rdquo; language, it is case sensitive.</p>
+<h3 id="commands-usde-in-c-programming-to-print-some-special-characters-in-the-program">Commands Usde In C Programming To Print Some Special Characters In The Program</h3>
+<p><img src="/Escape-Sequence-is-C.png" alt="Print the special characters"></p>
+<h2 id="what-did-we-talk-about-on-this-page-and-what-did-we-learn">What Did We Talk About On This Page And What Did We Learn?</h2>
+<ul>
+<li>
+<p>The steps of developing a simple application with C programming are explained.</p>
+</li>
+<li>
+<p>The concept of veriable in C language was explained and superficial examples were given on the subject.</p>
+</li>
+<li>
+<p>Small examples and warnings about basic writing and reading operat,ons are given.</p>
+</li>
+</ul>
+
+    </div>
+  </article>
+
+  
+  
+
+
+
+
+
+
+  <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/posts">All posts</a></li>
+         
+          <li><a href="/tags">Tags</a></li>
+         
+          <li><a href="/about">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+
+    <div id="share-footer" style="display: none">
+      
+      <ul>
+  
+  
+    
+  
+  
+  <li>
+    <a class="icon" href="http://www.facebook.com/sharer.php?u=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f" aria-label="Facebook">
+      <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://twitter.com/share?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&text=Introduction%20to%20C%20Programming" aria-label="Twitter">
+      <i class="fab fa-twitter fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.linkedin.com/shareArticle?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&title=Introduction%20to%20C%20Programming" aria-label="Linkedin">
+      <i class="fab fa-linkedin fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&is_video=false&description=Introduction%20to%20C%20Programming" aria-label="Pinterest">
+      <i class="fab fa-pinterest fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="mailto:?subject=Introduction%20to%20C%20Programming&body=Check out this article: https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f" aria-label="Email">
+      <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://getpocket.com/save?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&title=Introduction%20to%20C%20Programming" aria-label="Pocket">
+      <i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://reddit.com/submit?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&title=Introduction%20to%20C%20Programming" aria-label="reddit">
+      <i class="fab fa-reddit fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="http://www.tumblr.com/share/link?url=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&name=Introduction%20to%20C%20Programming&description=Let%26rsquo%3bs%20start%20with%20an%20example%20that%20almost%20everyone%20who%20wants%20to%20know%20about%20this%20subject%20knows.%0aBasic%20Simple%20%3a%20Hello%20World%21%20%23include%20%26lt%3bstdio.h%26gt%3b%20int%20main%28%29%20%7b%20printf%28%26%2334%3bHello%20Wordl%21%26%2334%3b%29%3b%20return%200%3b%20%7d%20%23%20An%20Important%20Note%3a%20On%20windows%20operating%20system%2c%20here%20also%20when%20using%20different%20compliers%2c%23include%20%26lt%3bconio.h%26gt%3b%20and%20after%20the%20printf%20fonctions%20getch%28%29%20should%20add.%20This%20is%20a%20funtion%20that%20needs%20to%20be%20added%20to%20prevent%20the%20running%20code%20from%20appearing%20for%20a%20snapshot%20and%20going%20back." aria-label="Tumblr">
+      <i class="fab fa-tumblr fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+  <li>
+    <a class="icon" href="https://news.ycombinator.com/submitlink?u=https%3a%2f%2fsuperterminalux.github.io%2fposts%2fintroduction-to-c-programming%2f&t=Introduction%20to%20C%20Programming" aria-label="Hacker News">
+      <i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i>
+    </a>
+  </li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      
+        <a id="menu-toggle" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;" aria-label="Menu">
+          <i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+        <a id="share-toggle" class="icon" href="#" onclick="$('#share-footer').toggle();return false;" aria-label="Share">
+          <i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" aria-label="Top of Page">
+          <i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+
+  <footer id="footer">
+  <div class="footer-left">
+    Copyright  &copy; 2023  My Learn-Improve Blog 
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+        <li><a href="/">Home</a></li>
+         
+        <li><a href="/posts">All posts</a></li>
+         
+        <li><a href="/tags">Tags</a></li>
+         
+        <li><a href="/about">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+
+  </div>
+</body>
+
+<link rel="stylesheet" href=/lib/font-awesome/css/all.min.css>
+<script src=/lib/jquery/jquery.min.js></script>
+<script src=/js/main.js></script>
+
+<script src=/js/code-copy.js></script>
+
+
+
+
+</html>
