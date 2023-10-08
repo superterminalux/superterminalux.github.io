@@ -5,27 +5,6 @@
     <link>https://superterminalux.github.io/</link>
     <description>Recent content on My Learn-Improve Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 02 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Introduction to C Programming</title>
-      <link>https://superterminalux.github.io/posts/introduction-to-c-programming/</link>
-      <pubDate>Wed, 02 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://superterminalux.github.io/posts/introduction-to-c-programming/</guid>
-      <description>Let&amp;rsquo;s start with an example that almost everyone who wants to know about this subject knows.
-Basic Simple : Hello World! #include &amp;lt;stdio.h&amp;gt; int main() { printf(&amp;#34;Hello Wordl!&amp;#34;); return 0; } # An Important Note: On windows operating system, here also when using different compliers,#include &amp;lt;conio.h&amp;gt; and after the printf fonctions getch() should add. This is a funtion that needs to be added to prevent the running code from appearing for a snapshot and going back.</description>
-    </item>
-    
-    <item>
-      <title>About Fundamentals</title>
-      <link>https://superterminalux.github.io/posts/fundamentals-and-programs/</link>
-      <pubDate>Tue, 01 Aug 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://superterminalux.github.io/posts/fundamentals-and-programs/</guid>
-      <description>Programs What Is The Program? The meaning of the program is the executable text specific to hardware of the devices. 1 and 0 codes are run as much as the processor of the device acceptes.
-If we examine the working of the program with an example : When a program with .exe extension or a program is run in a diffrent operating systems, certain commands are sent to the processor simultaneously with the execution of the binary codes of this program.</description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://superterminalux.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
