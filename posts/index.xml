@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on My Learn-Improve Blog</title>
+    <link>https://superterminalux.github.io/posts/</link>
+    <description>Recent content in Posts on My Learn-Improve Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>SuperTerminaLuxry</copyright>
+    <lastBuildDate>Tue, 27 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming : Introduction to Programming</title>
+      <link>https://superterminalux.github.io/posts/postc1/</link>
+      <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://superterminalux.github.io/posts/postc1/</guid>
+      <description>Programs What Is The Program? The meaning of the program is hardware-specific executable text.
+If examine the working of a program with an example: When run a program with .exe(that is .exe on win OS(Operation System)) extension or another a program extension in any operation system, this program sends certain commands to the systems processor and program works. (This steps for the same systems like computers, tablets, smartphones, etc.)
+These stages means are programming.</description>
+    </item>
+    
+  </channel>
+</rss>
