@@ -7,7 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>SuperTerminaLuxry</copyright>
-    <lastBuildDate>Tue, 27 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming : Introduction to C Programing</title>
+      <link>https://superterminalux.github.io/posts/postc1/</link>
+      <pubDate>Wed, 28 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://superterminalux.github.io/posts/postc1/</guid>
+      <description>A Traditional Example : Hello World! 1#include &amp;lt;stdio.h&amp;gt; 2//#include &amp;lt;conio.h&amp;gt; (This library for the Windows users) 3 4int main() 5{ 6	printf(&amp;#34;Hello World!&amp;#34;); 7	printf(&amp;#34;\n&amp;#34;); 8	//getch (); (This fonction for the Windows users) 9	return 0; 10} A library is included in the program with #include &amp;lt;libraryname&amp;gt;. The task of the libraries are to be the source for the use of the necessay functions. In the simplest example; the C is can not include the printf function but the libray of stdio.</description>
+    </item>
+    
     <item>
       <title>Programming : Introduction to Programming</title>
       <link>https://superterminalux.github.io/posts/postp1/</link>
