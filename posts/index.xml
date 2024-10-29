@@ -7,7 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>SuperTerminaLuxry</copyright>
-    <lastBuildDate>Wed, 28 Aug 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://superterminalux.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Programming : Spelling Rules and Operatos : 1</title>
+      <link>https://superterminalux.github.io/posts/postc2/</link>
+      <pubDate>Tue, 29 Oct 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://superterminalux.github.io/posts/postc2/</guid>
+      <description>Basic Conditions for Programming Statements Explain the given basic orders and commands. For example printf command is a direct command and an order but like this int main() commands can not to be a statement. End of the sentence there has to be ; (semicolon). Finally this is an atomic property.
+Blocks Used for view multiple statements as a general group. A group is shown between of { ... }the 2 curly brackets.</description>
+    </item>
+    
     <item>
       <title>Programming : Introduction to C Programing</title>
       <link>https://superterminalux.github.io/posts/postc1/</link>
