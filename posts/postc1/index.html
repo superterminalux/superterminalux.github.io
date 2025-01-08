@@ -171,7 +171,8 @@
     <li><a href="#some-of-the-variables-are">Some Of The Variables Are:</a></li>
     <li><a href="#using-variables-in-command-lines">Using Variables In Command Lines</a>
       <ul>
-        <li><a href="#simple-example-of-using-the-variables">Simple Example Of Using The Variables</a></li>
+        <li><a href="#simple-exaple-of-using-variables">Simple Exaple Of Using Variables</a></li>
+        <li><a href="#another-simple-example-of-using-the-variables-with-explanation">Another Simple Example Of Using The Variables With Explanation</a></li>
         <li><a href="#examining-variables-with-a-different-example">Examining Variables With A Different Example</a></li>
       </ul>
     </li>
@@ -204,7 +205,7 @@
         <div class="article-read-time">
           <i class="far fa-clock"></i>
           
-          4 minute read
+          5 minute read
         </div>
         
         
@@ -256,7 +257,44 @@
 <h2 id="some-of-the-variables-are">Some Of The Variables Are:</h2>
 <p><img src="/C2ValueTypes.jpg" alt="List of some variables used:"></p>
 <h2 id="using-variables-in-command-lines">Using Variables In Command Lines</h2>
-<h3 id="simple-example-of-using-the-variables">Simple Example Of Using The Variables</h3>
+<h3 id="simple-exaple-of-using-variables">Simple Exaple Of Using Variables</h3>
+<p>We can analyze these variables with comand lines. This code is here only for to be an explanation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#ff79c6">#include</span> <span style="color:#ff79c6">&lt;stdio.h&gt;</span><span style="color:#ff79c6">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#ff79c6">#include</span> <span style="color:#ff79c6">&lt;stdlib.h&gt;</span><span style="color:#ff79c6">
+</span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#ff79c6"></span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4</span><span><span style="color:#8be9fd">int</span> <span style="color:#50fa7b">main</span>()
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5</span><span>{
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">Hello World</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8</span><span>	<span style="color:#8be9fd">char</span> Letter1 <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;C&#39;</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9</span><span>	<span style="color:#8be9fd">char</span> Letter2 <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;O&#39;</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10</span><span>	<span style="color:#8be9fd">char</span> Letter3 <span style="color:#ff79c6">=</span> <span style="color:#f1fa8c">&#39;Q&#39;</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12</span><span>	<span style="color:#8be9fd">int</span> Number1 <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">8</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13</span><span>	<span style="color:#8be9fd">int</span> Number2 <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">57</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15</span><span>	<span style="color:#8be9fd">float</span> numPi <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">3.14</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17</span><span>	<span style="color:#8be9fd">double</span> Number3 <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">123.321</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18</span><span>	<span style="color:#8be9fd">double</span> Number4 <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">321.123</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20</span><span>	<span style="color:#8be9fd">long</span> <span style="color:#8be9fd">long</span> <span style="color:#8be9fd">int</span> longerthanlonger <span style="color:#ff79c6">=</span> <span style="color:#bd93f9">5459232174475899</span>;
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21</span><span>
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">%c&#34;</span>, Letter1);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;%c&#34;</span>, Letter2);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;%c&#34;</span>, Letter3); 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;-&gt; %d&#34;</span>, Number1);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;%d</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>, Number2);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">%f</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>, numPi);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">%lf</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>, Number3);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;%lf</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>, Number4);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30</span><span>	<span style="color:#50fa7b">printf</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">%lld</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>, longerthanlonger);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31</span><span>	<span style="color:#50fa7b">pritnf</span>(<span style="color:#f1fa8c">&#34;</span><span style="color:#f1fa8c">\n</span><span style="color:#f1fa8c">&#34;</span>);
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32</span><span>	<span style="color:#ff79c6">return</span> <span style="color:#bd93f9">0</span>; 
+</span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33</span><span>}
+</span></span></code></pre></div><p>This command will give these output to writer:</p>
+<p><img src="/BasicCodeExample.png" alt="True Output:"></p>
+<h3 id="another-simple-example-of-using-the-variables-with-explanation">Another Simple Example Of Using The Variables With Explanation</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-C" data-lang="C"><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1</span><span><span style="color:#ff79c6">#incldue&lt;stdio.h&gt;
 </span></span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2</span><span><span style="color:#ff79c6"></span>
 </span></span><span style="display:flex;"><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3</span><span><span style="color:#8be9fd">int</span> <span style="color:#50fa7b">main</span>()
@@ -393,7 +431,8 @@ In here teh expression <strong>%8.4f</strong> means is the wariable will showned
     <li><a href="#some-of-the-variables-are">Some Of The Variables Are:</a></li>
     <li><a href="#using-variables-in-command-lines">Using Variables In Command Lines</a>
       <ul>
-        <li><a href="#simple-example-of-using-the-variables">Simple Example Of Using The Variables</a></li>
+        <li><a href="#simple-exaple-of-using-variables">Simple Exaple Of Using Variables</a></li>
+        <li><a href="#another-simple-example-of-using-the-variables-with-explanation">Another Simple Example Of Using The Variables With Explanation</a></li>
         <li><a href="#examining-variables-with-a-different-example">Examining Variables With A Different Example</a></li>
       </ul>
     </li>
